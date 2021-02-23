@@ -43,7 +43,6 @@ define( 'DB_CHARSET', 'utf8' );
 /** データベースの照合順序 (ほとんどの場合変更する必要はありません) */
 define( 'DB_COLLATE', '' );
 
-<?php
 //例外処理
 try{
     $db=new PDO('mysql:dbname=heroku_5f5418912b18e25;host=us-cdbr-east-03.cleardb.com;charset=utf8','b505d9cbccaa92','8ab82ac0');
