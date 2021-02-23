@@ -35,7 +35,8 @@ define( 'DB_USER', 'root' );
 define( 'DB_PASSWORD', 'mmYKH9171' );
 
 /** MySQL のホスト名 */
-define( 'DB_HOST', 'localhost' );
+// localhostから127.0.0.1に変更
+define( 'DB_HOST', '127.0.0.1' );
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
 define( 'DB_CHARSET', 'utf8' );
@@ -45,11 +46,11 @@ define( 'DB_COLLATE', '' );
 
 //例外処理
 try{
-    $db=new PDO('mysql:dbname=heroku_be9ffcecb28fb7b;host=us-cdbr-east-03.cleardb.com;unix_socket=/tmp/mysql.sock;charset=utf8','b6037e96bc0d6f','63f89a45');
+    $db=new PDO('mysql:dbname=heroku_be9ffcecb28fb7b;host=us-cdbr-east-03.cleardb.com;charset=utf8','b6037e96bc0d6f','63f89a45');
 }catch(PDOException $e){
     print('DB接続エラー:'.$e->getMessage());
 }
-/tmp/mysql.sock
+
 /**#@+
  * 認証用ユニークキー
  *
