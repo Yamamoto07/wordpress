@@ -32,7 +32,7 @@ define( 'DB_NAME', 'app-intro-db' );
 define( 'DB_USER', 'root' );
 
 /** MySQL データベースのパスワード */
-define( 'DB_PASSWORD', 'root' );
+define( 'DB_PASSWORD', 'mmYKH9171' );
 
 /** MySQL のホスト名 */
 define( 'DB_HOST', 'localhost' );
