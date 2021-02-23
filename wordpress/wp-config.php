@@ -45,7 +45,7 @@ define( 'DB_COLLATE', '' );
 
 //例外処理
 try{
-    $db=new PDO('mysql:dbname=heroku_be9ffcecb28fb7b:host=us-cdbr-east-03.cleardb.comcharset=utf8','b6037e96bc0d6f', '63f89a45');
+    $db=new PDO('mysql:dbname=heroku_be9ffcecb28fb7b;host=us-cdbr-east-03.cleardb.com;charset=utf8','b6037e96bc0d6f','63f89a45');
 }catch(PDOException $e){
     print('DB接続エラー:'.$e->getMessage());
 }
