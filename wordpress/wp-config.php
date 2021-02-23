@@ -45,14 +45,12 @@ define( 'DB_COLLATE', '' );
 
 //例外処理
 try{
-    $db=new PDO('mysql:dbname=heroku_5f5418912b18e25;host=us-cdbr-east-03.cleardb.com;charset=utf8','b505d9cbccaa92','8ab82ac0');
+    $db=new PDO('mysql:dbname=heroku_be9ffcecb28fb7b:host=us-cdbr-east-03.cleardb.comcharset=utf8','b6037e96bc0d6f', '63f89a45');
 }catch(PDOException $e){
     print('DB接続エラー:'.$e->getMessage());
 }
 
 
-
-mysql://bb248c1387aee5:75de3fb5@us-cdbr-east-03.cleardb.com/heroku_f24f18034a74850?reconnect=true
 
 /**#@+
  * 認証用ユニークキー
