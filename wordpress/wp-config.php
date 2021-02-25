@@ -26,16 +26,16 @@
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define( 'DB_NAME', 'app-intro-db' );
+define( 'DB_NAME', 'heroku_be9ffcecb28fb7b' );
 
 /** MySQL データベースのユーザー名 */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'b6037e96bc0d6f' );
 
 /** MySQL データベースのパスワード */
-define( 'DB_PASSWORD', 'root' );
+define( 'DB_PASSWORD', '63f89a45' );
 
 /** MySQL のホスト名 */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'us-cdbr-east-03.cleardb.com' );
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
 define( 'DB_CHARSET', 'utf8' );
@@ -43,17 +43,13 @@ define( 'DB_CHARSET', 'utf8' );
 /** データベースの照合順序 (ほとんどの場合変更する必要はありません) */
 define( 'DB_COLLATE', '' );
 
-<?php
-//例外処理
+/*例外処理
 try{
-    $db=new PDO('mysql:dbname=heroku_f24f18034a74850;host=us-cdbr-east-03.cleardb.com;charset=utf8','bb248c1387aee5','75de3fb5');
+    $db=new PDO('mysql:dbname=heroku_be9ffcecb28fb7b;host=us-cdbr-east-03.cleardb.com;charset=utf8','b6037e96bc0d6f','63f89a45');
 }catch(PDOException $e){
     print('DB接続エラー:'.$e->getMessage());
 }
-
-
-
-mysql://bb248c1387aee5:75de3fb5@us-cdbr-east-03.cleardb.com/heroku_f24f18034a74850?reconnect=true
+*/
 
 /**#@+
  * 認証用ユニークキー
@@ -64,14 +60,14 @@ mysql://bb248c1387aee5:75de3fb5@us-cdbr-east-03.cleardb.com/heroku_f24f18034a748
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define( 'AUTH_KEY',         '+byYji|OHxs}cZr$a--)yK9p(z{vh}pC4Ned0j]fuBZN3I<t,wX-XPY-+vA5&R1I' );
+define( 'SECURE_AUTH_KEY',  '5J~7-7`R;IWM,DTA`UiL(ak.Xov$|R#PELzn;aNE$s~oTA)d_GAv}r_o]IgR/>^S' );
+define( 'LOGGED_IN_KEY',    'wN6sPk@}+}|<q*B2C%*$f|+Z.$C[o6cZ;!FUFiqgtMrL%z0|>%Rg-QD.B|JZ!dYk' );
+define( 'NONCE_KEY',        '_YCUxEQtnEtS1PvUd+uz|_,vB+bchf-NJjN5D&T]5fF%03tSDL@0>QeP|XvSdRnP' );
+define( 'AUTH_SALT',        '@Zylv+c+W p1WJZj+yyXD)y54fGYk|V2F4`|f,M]kgQ?K2`X@XbHK9(&E4fUUYlo' );
+define( 'SECURE_AUTH_SALT', 'YH&EX}9`fY291NPL+kVz}jxI}UwxEd#3*V]3Vy9/]8?Y#wsD,0tX=x|ngv=0k3pl' );
+define( 'LOGGED_IN_SALT',   'ye7fFY-Z=LukEOfk!oTI/Ys|Y+c1(lV-k@rVS+)t|ih 6uIa*fvZuh#YgVlX.NHS' );
+define( 'NONCE_SALT',       'xVwo10dy^i?~L{&w5g+=Q1[*9|c3^kjL^T}b5Y}$g#S3(n G@e~#Rx-+NIF {U,/' );
 
 /**#@-*/
 
@@ -93,7 +89,7 @@ $table_prefix = 'wp_';
  *
  * @link https://ja.wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
+define( 'WP_DEBUG', true );
 
 /* 編集が必要なのはここまでです ! WordPress でのパブリッシングをお楽しみください。 */
 
