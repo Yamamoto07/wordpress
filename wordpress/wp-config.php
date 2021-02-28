@@ -89,7 +89,7 @@ $table_prefix = 'wp_';
  *
  * @link https://ja.wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', true );
+define( 'WP_DEBUG', false );
 
 /* 編集が必要なのはここまでです ! WordPress でのパブリッシングをお楽しみください。 */
 
