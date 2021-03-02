@@ -1,0 +1,83 @@
+Version 1.2.2
+* wp_body_open function added.
+
+Version 1.2.1
+* Demo file and URL removed.
+
+Version 1.2.0
+* style improved.
+
+Version 1.1.9
+* Copyright text updated.
+
+Version 1.1.8
+* compatible with latest WordPress.
+
+Version 1.1.7
+* Theme error fixed.
+
+Version 1.1.6
+* Style improved.
+* Dummy import section added.
+
+Version 1.1.5
+* Pro link added.
+* Doc link added.
+* Selective refresh added.
+
+Version 1.1.4
+* Bugg fixed.
+* style improved.
+
+Version 1.1.3
+* Display title and description issue fixed.
+
+Version 1.1.2
+* Style improved.
+
+Version 1.1.1
+* About Me label issue fixed.
+* wp_strip_all_tags() function update.
+
+Version 1.1.0
+* cusyom-style escaped issue fixed.
+* style.css Licensing issue fixed.
+* social icon default issue fixed.
+
+Version 1.0.9
+* index page pagination issue fixed.
+* sanitizing issue fixed.
+
+Version 1.0.8
+* sidebar issue fixed.
+* tag-title issue fixed.
+* prifix issue fixed.
+* all recommended issue fixed.
+
+
+Version 1.0.7
+* child theme issue fixed.
+
+Version 1.0.6
+* image crop issue fixed.
+
+Version 1.0.5
+* all prefix Improved
+
+Version 1.0.4
+* prefix Improved
+* Bug Fixed
+
+Version 1.0.3
+* Mobile header issue fixed.
+* Script tag removed from file.
+* Plugin folder removed.
+
+Version 1.0.2
+ * plugin required issue fixed.
+
+Version 1.0.1
+ * Bug Fixed
+ 
+Version 1.0.0
+ * Initial release
