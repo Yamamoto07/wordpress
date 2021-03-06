@@ -1,0 +1,398 @@
+/*　スマホ向けレイアウト　*/
+@media all and (max-width:670px) {
+	#wrapper {
+		width: 100%;
+		padding:0;
+	    margin: 0;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+	.box {
+		width:100%;
+		padding:0;
+	    	margin: 0;
+		box-sizing: border-box;
+	}
+    	#top {
+        	width:100%;
+    	}
+    	.header {
+		width:320px;
+        	height:50px;
+		margin:auto;
+    	}
+	.header-wrapper {
+		width:300px;
+		margin:auto;
+	}
+    	.header-logo {
+        	font-size: 12px;
+    	}
+    	.header-list {
+        	display:none;
+    	}
+    	.header-btn {
+        	display:none;
+    	}
+    	.header-icon {
+        	width:40px;
+        	height:40px;
+        	display:flex;
+        	align-items: center;
+        	justify-content: center;
+        	background-color:coral;
+        	border-radius: 20px;
+        	float:right;
+		color:white;
+    	}
+    	/*.fas fa-barsにしないこと*/
+    	.fa-bars {
+        	font-size:20px;
+    	}
+	#cover {
+		background:#000;
+		opacity:0.6;
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:1;
+		display:none;
+	}
+	#menu {
+		z-index: 2;
+		position:absolute;
+		top:0;
+		right:-180px;
+		color:#fff;
+		background:#4c81e9;
+		padding:28px;
+		box-sizing:border-box;
+		width: :200px;
+		min-height: 100%;
+		transition: .4s;
+		overflow: hidden;
+	}
+	#menu li {
+		margin-bottom: 5px;
+	}
+	.menu-btn {
+		color: white;
+	}
+	#show {
+		float:right;
+		cursor:pointer;
+	}
+	#hide {
+		float:right;
+		cursor:pointer;
+		margin-bottom:10px;
+		margin-left:100px
+	}
+
+	.menu-open {
+		overflow-y: hidden;
+	}
+	.menu-open #cover {
+		display:block;
+	}
+	.menu-open #menu {
+		right:0;
+		display: block;
+	}
+    	#introduction-top {
+        	height:400px;
+    	}
+    	#introduction-top h1 {
+        	font-size:37px;
+    	}
+    	#introduction-top p {
+        	font-size:11px;
+        	margin-top:15px;
+        	text-align:center;
+    	}
+    	#introduction-bottom {
+        	height:750px;
+        	display:inline-block;
+        	padding:15% 5%;
+        	box-sizing:border-box;
+        	width: 100%;
+    	}
+    	#introduction-bottom-wrapper {
+        	min-width:320px;
+        	height:600px;
+        	display:inline-block;
+    	}
+    	#introduction-bottom h2 {
+        	width:320px;
+        	font-size:35px;
+        	font-weight:bold;
+        	margin:auto;
+    	}	
+    	.introduction-text p {
+        	display:none;
+    	}
+    	.bars1 {
+        	margin-right:2%;
+        	height:10%;
+    	}
+    	.bar1::before {
+        	width:100%;
+        	margin-top:4%;
+    	}
+    	.bar2::before {
+        	width:140%;
+        	left:-23%;
+    	}
+    	#responsive-introduction-text1 {
+        	width:100%;
+    	}
+    	#responsive-introduction-text1 p {
+        	display:inline-block;
+        	font-weight:bold;
+        	width:75%;
+        	margin-top:2%;
+       		margin-bottom:3%;
+    	}
+    	.image-cafe1 {
+		width:320px;
+		padding-left:15%;
+		margin-right:5%;
+        	height:30%;
+        	display:block;
+		margin:auto;
+        	margin-bottom:2%;
+    	}
+    	#responsive-introduction-text2 p {
+        	display:inline-block;
+        	width:100%;
+        	height:80px;
+        	font-size:17px;
+        	line-height:180%;
+    	}
+    	#responsive-introduction-btn {
+        	width:40%;
+        	height:7%;
+        	display:flex;
+        	padding-top:2%;
+        	justify-content:center;
+        	color:white;
+        	letter-spacing: 1px;
+        	background-color:black;
+        	position:relative;
+        	left:55%;
+        	top:4%;
+        	background-color:block;
+    	}
+    	.fa-caret-right {
+        	font-size:110%;
+        	height:50%;
+        	margin-top:1.5%;
+        	margin-left:3%;
+    	}
+    	#about {
+        	height:  1050px;
+		background-image: url(%E8%83%8C%E6%99%AF%E7%99%BD%20%E6%96%87%E5%AD%97TECHMEETS.png);
+    	}
+    	#about-top {
+        	height:120px;
+        	margin-top:70px;
+    	}
+    	#about-top h3 {
+        	font-size:33px;
+        	font-weight:bold;
+    	}
+    	#about-top p {
+        	font-size:15px;
+    	}
+    	#about-contents {
+        	height:915px;
+        	box-sizing:border-box;
+        	max-width: 320px;
+    	}
+    	.about-content {
+        	width:43%;
+        	height:305px;
+        	box-sizing:border-box;
+    	}
+    	.image-cafe2 {
+        	width:140px;
+        	height:93px;
+    	}
+    	.about-content-text {
+        	display:none;
+    	}
+    	.responsive-content-text {
+        	display:block;
+        	height:150px;
+        	line-height: 23px;
+    	}
+    	#form {
+        	height:400px;
+    	}
+    	#form-wrapper {
+        	max-width:320px;
+		margin-left: 18%;
+		margin-right:18%;
+    	}
+    	#form-contents p {
+        	font-size:15px;
+        	text-align:left;
+        	line-height:30px;
+    	}
+    	#form-btn {
+        	height:60px;
+    	}
+    	#form-btn a {
+        	font-size:16px;
+    	}
+    	#responsive-form-text {
+        	display:inline-block;
+        	margin-top:25px;
+        	font-size:14px;
+        	opacity:0.9;
+    	}
+    	#responsive-form-text a {
+        	color:white;
+        	text-decoration:underline;
+    	}
+    	#news {
+        	height:1100px;
+    	}
+    	#news-wrapper {
+        	width:320px;
+        	margin:auto;
+    	}
+    	#news-wrapper h4 {
+        	height:70px;
+        	width:30%;
+        	font-size: 31px;
+        	font-weight: bold;
+        	letter-spacing:1px;
+        	display:inline-block;
+        	padding-top:50px;
+        	margin-right:15px;
+    	}
+    	#news-contents {
+        	width:320px;
+    	}
+    	.news-content {
+        	width:auto;
+        	margin-bottom:7%;
+    	}
+    	#responsive-news-japanese-syllabaries {
+        	width:25%;
+        	font-size:18px;
+        	display:inline-block;
+    	}
+    	.bars2 {
+        	width:12%;
+    	}
+    	.bar3::before {
+        	width:20px;
+        	top:-2px;
+    	}
+    	.bar4::before {
+        	width:27px;
+        	left:-2px;
+        	border-top: solid 1.6px black;
+    	}
+    	.news-date  {
+        	font-weight:bold;
+        	margin-left:2%;
+    	}
+    	.news-text {
+        	width:55%;
+        	margin-left:2%;
+        	font-size:15px;
+        	line-height:160%;
+    	}
+    	.footer {
+        	height:60px;
+        	padding:2% 0px;
+    	}
+    	.footer-wrapper {
+        	max-width:320px;
+        	margin:auto;
+        	opacity: 0.8;
+        	font-size: 13px;
+        	text-align: center;
+    	}
+    	.footer-logo {
+        	display:none;
+    	}
+    	.responsive-footer-logo {
+        	display:block;
+        	letter-spacing: 1.5px;
+    	}
+    	.responsive-footer-text {
+        	display: block;
+    	}
+    	.footer-list {
+        	display:none;
+    	}
+	/*お問い合わせフォーム*/
+	.header-image{
+		width:100%;
+	}
+	.form-group {
+		height:900px
+	}
+	.form-group-wrapper {
+		width:350px;
+		height:850px;
+		padding-top:0px;
+		padding:20px;
+	}
+	.form-group-wrapper h1 {
+	  	padding-top:0;
+		padding-left:0;
+		font-size:25px;
+	}
+	.form-group-wrapper p {
+		padding-left:0px;
+	}
+	.form-error-list {
+		padding-left:0;
+	}
+	.form-input label{
+		margin-right:0;
+		padding-left:0;
+	}
+	.btn-primary {
+		margin-right:0;
+	}
+	
+	.thanks-form-group-wrapper{
+		width:350px;
+		padding:20px;
+	}
+	.thanks-form-group-wrapper h2{
+		font-size:25px;
+		padding-left:0;
+	}
+	.thanks-form-group-wrapper p{
+		padding-left:0;
+	}
+	.thanks-form-group-btn{
+		margin-right:0;
+	}
+}
+
+@media all and (max-width:320px) {
+
+    #introduction-bottom-wrapper {
+        width:310px;
+    }
+    #responsive-introduction-text1 {
+        width:90%;
+    }
+    #responsive-introduction-text2 {
+        width:90%;
+    }
+    .image-cafe1 {
+        width:90%;
+        height:160px;
+    }
+}
