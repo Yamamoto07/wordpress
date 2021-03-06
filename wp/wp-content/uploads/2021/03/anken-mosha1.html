@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="anken-mosha1.css">
+        <link rel="stylesheet" href="anken-mosha1-responsive.css">
+        <script src="https://kit.fontawesome.com/c000d8f8d0.js" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>TECHMEETS</title>
+    </head>
+
+    <body>
+		<div id="wrapper">
+		<script>	
+			$(function() {
+				$(window).scroll(function() {
+					const dy =$(this).scrollTop();
+					console.log(dy);
+					
+					$('#top').css('background-position', '0 '+dy+'px');
+					
+					if (dy > 500) {
+						$('#introduction-bottom').css('background-position', '0 '+(dy-500)+'px');
+					} else {
+						$('#introduction-bottom').css('background-position', '0 0');
+					}
+					
+					if (dy > 1150) {
+						$('#about').css('background-position', '0 '+(dy-1150)+'px');
+					} else {
+						$('#about').css('background-position', '0 0');
+					}
+
+					if (dy > 1900) {
+						$('#form').css('background-position', '0 '+(dy-1900)+'px');
+					} else {
+						$('#form').css('background-position', '0 0')
+					}
+					
+					if (dy > 3000) {
+						$('#news').css('background-position','0 '+(dy-3000)+'px');
+					} else {
+						$('#news').css('background-position', '0 0')
+					}
+				});
+			});
+		</script>
+			
+		<div id="top">
+		<div id="bg1" class="box">
+            <div class="header">
+                <div class="header-wrapper">
+                    <a href="anken-mosha1.html" class="header-logo">
+                        TECHMEETS<br>
+						ダミーテキスト</a>
+                    <a href="#" class="header-icon" id="show">
+                        <i class="fa fa-bars" ></i>
+                    </a>
+
+                    <div class="header-btn">
+                        <a href="#" class="header-btn1">無料相談</a>
+                        <a href="anken-mosha1-form.php" class="header-btn2">お問い合わせ</a>    
+                    </div>
+                    
+                    <div class="header-list">
+                        <ul>
+                            <li>TOP</li>
+                            <li>カリキュラム</li>
+                            <li>料金</li>
+                            <li>アクセス</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <div id="introduction-top">
+                <div id="introduction-top-wrapper">
+                    <h1>Welcome to</h1>
+                    <h1>TECHMEETS</h1>
+                    <p>～DUMMY TEXT & DUMMY TEXT ～</p>
+                </div>
+            </div>
+        </div>
+		</div>
+		
+		<div id="cover"></div>
+		
+		<div id="menu">
+			<i class="fa fa-times" id="hide"></i>
+			<ul>
+				<li>TOP</li>
+				<li>カリキュラム</li>
+				<li>料金</li>
+				<li>アクセル</li>
+				<li>無料相談</li>
+				<li><a href="anken-mosha1-form.php" class="menu-btn">お問い合わせ</a></li>
+			</ul>
+		</div>
+        
+
+	<!-- menu -->
+	
+	<script type="text/javascript">
+	(function() {
+		'use strict';
+		
+		var show = document.getElementById('show');
+		var hide = document.getElementById('hide');
+		
+		show.addEventListener('click', function() {
+			document.body.className ='menu-open';
+		});
+		
+		hide.addEventListener('click', function() {
+			document.body.className = '';
+		});
+	})();
+	
+		//if (document.getElementById('menu').getElementsByClassName('menu-open').style.display == "block") {
+			//document.addEventListener('touchmove', function(e) {e.preventDefault();}, {passive:false});
+		//}
+	</script>
+		
+        <div id="introduction-bottom">
+		<div id="bg2" class="box">
+            <div id="introduction-bottom-wrapper">
+                <h2>WHAT IS</h2>
+                <h2>"TECHMEETS"?</h2>
+                
+                <div class="bars1">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                </div>
+                
+                <div class="introduction-text">
+                    <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</p>
+                    <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</p>
+                </div>
+                
+                <div id="responsive-introduction-text1">
+                    <p>これは見出しを入れるボックスです。ダミーテキストダミーテキストダミーテキスト</p>
+                </div>
+                
+                <img src="introduction%20%E3%82%AB%E3%83%95%E3%82%A7.jpg" class="image-cafe1">
+                
+                <div id="responsive-introduction-text2">
+                    <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</p>
+                    <p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</p>
+                </div>
+                
+                <a href="#" id="responsive-introduction-btn">詳細を見る<i class="fas fa-caret-right"></i></a>
+                
+                <div class="clear"></div>
+            </div>
+        </div>
+		</div>
+		
+        
+        <div id="about">
+		<div id="bg3" class="box">
+            <div id="about-wrapper">
+                <div id="about-top">
+                    <h3>ABOUT</h3>
+                    <p>テックミーツの特徴</p>
+                </div>
+                
+                <div id="about-contents">
+                    <div class="about-content">
+                        <img src="introduction%20%E3%82%AB%E3%83%95%E3%82%A7.jpg" alt="カフェの写真" class="image-cafe2">
+                        <p class="tytle">タイトルタイトルタイトル</p>
+                        <p class="about-content-text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                        <p class="responsive-content-text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</p>
+                    </div>
+                    
+                    <div class="about-content">
+                        <img src="introduction%20%E3%82%AB%E3%83%95%E3%82%A7.jpg" alt="カフェの写真" class="image-cafe2">
+                        <p class="tytle">タイトルタイトルタイトル</p>
+                        <p class="about-content-text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                        <p class="responsive-content-text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</p>
+                    </div>
+                    
+                    <div class="about-content">
+                        <img src="introduction%20%E3%82%AB%E3%83%95%E3%82%A7.jpg" alt="カフェの写真" class="image-cafe2">
+                        <p class="tytle">タイトルタイトルタイトル</p>
+                        <p class="about-content-text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                        <p class="responsive-content-text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</p>
+                    </div>
+                    
+                    <div class="about-content">
+                        <img src="introduction%20%E3%82%AB%E3%83%95%E3%82%A7.jpg" alt="カフェの写真" class="image-cafe2">
+                        <p class="tytle">タイトルタイトルタイトル</p>
+                        <p class="about-content-text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                        <p class="responsive-content-text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</p>
+                    </div>
+                    
+                    <div class="about-content">
+                        <img src="introduction%20%E3%82%AB%E3%83%95%E3%82%A7.jpg" alt="カフェの写真" class="image-cafe2">
+                        <p class="tytle">タイトルタイトルタイトル</p>
+                        <p class="about-content-text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                        <p class="responsive-content-text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</p>
+                    </div>
+                    
+                    <div class="about-content">
+                        <img src="introduction%20%E3%82%AB%E3%83%95%E3%82%A7.jpg" alt="カフェの写真" class="image-cafe2">
+                        <p class="tytle">タイトルタイトルタイトル</p>
+                        <p class="about-content-text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                        <p class="responsive-content-text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト。</p>
+                    </div>
+                </div>    
+            </div> 
+		</div>
+        </div>
+        
+        <div id="form">
+		<div id="bg4" class="box">
+            <div id="form-wrapper">
+                <div id="form-contents">
+                    <p>ダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                    <p>ここに無料相談に関するコピーを記載</p>
+                    <p>ダミーテキストダミーテキスト</p>
+                </div>
+                
+                <div id="form-btn">
+                    <a href="#" ><i class="fas fa-comments"></i><span class="margin"></span>無料相談会はこちら</a>
+                </div>
+                
+                <div id="responsive-form-text">
+                    <p>その他のお問い合わせは<a href="#">こちら。</a></p>
+                </div>    
+            </div>
+        </div>
+		</div>
+        
+        <div id="news">
+		<div id="bg5" class="box">
+            <div id="news-wrapper">
+                <h4>NEWS</h4>
+                <p id="responsive-news-japanese-syllabaries">ニュース</p>
+                
+                <div id="news-contents">
+                    <div class="news-content">
+                        <div class="bars2">
+                            <div class="bar3"></div>
+                            <div class="bar4"></div>
+                        </div>
+                        <p class="news-date">2019/12/10</p>
+                        <img src="news%20%E5%8B%89%E5%BC%B71.jpg" alt="勉強中の写真" id="image-study1">
+                        <p class="news-text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキ。</p>
+                    </div>
+                    
+                    <div class="news-content">
+                        <div class="bars2">
+                            <div class="bar3"></div>
+                            <div class="bar4"></div>
+                        </div>
+                        <p class="news-date">2019/12/10</p>
+                        <img src="news%20%E5%8B%89%E5%BC%B72.jpg" alt="勉強中の写真" id="image-study2">
+                        <p class="news-text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキ。</p>
+                    </div>
+                    
+                    <div class="news-content">
+                        <div class="bars2">
+                            <div class="bar3"></div>
+                            <div class="bar4"></div>
+                        </div>
+                        <p class="news-date">2019/12/10</p>
+                        <img src="news%20%E5%8B%89%E5%BC%B73.jpg" alt="勉強中の写真" id="image-study3">
+                        <p class="news-text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキ。</p>
+                    </div>
+                    
+                    <div class="news-content">
+                        <div class="bars2">
+                            <div class="bar3"></div>
+                            <div class="bar4"></div>
+                        </div>
+                        <p class="news-date">2019/12/10</p>
+                        <img src="news%20FX.jpg" alt="FXの写真" id="image-fx">
+                        <p class="news-text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキ。</p>
+                    </div>
+                </div>    
+            </div>
+		</div>	
+        </div>
+        
+        <div class="footer">
+		<div id="bg6" class="box">	
+            <div class="footer-wrapper">
+                <a href="anken-mosha1.html" class="footer-logo">
+                    TECHMEETS<br>
+                    ダミーテキスト
+				</a>
+                
+                <div class="responsive-footer-logo">
+                    <p>＠TECHMEETS DUMMY TEXT</p>
+                </div>
+                
+                <div class="responsive-footer-text">
+                    <p>All Right Reserved.</p>
+                </div>
+                
+                <div class="footer-list">
+                    <ul>
+                        <li>TOP</li>
+                        <li>カリキュラム</li>
+                        <li>料金</li>
+                        <li>アクセス</li>
+                        <li>無料相談</li>
+                        <li>お申込み</li>
+                        <li>プライバシーポリシー</li>
+                    </ul>
+                </div>    
+            </div>
+		</div>	
+        </div>
+	</div>
+    </body>
+
+	
+</html>
