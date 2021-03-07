@@ -1,0 +1,157 @@
+/*
+Theme Name: Dotinstall
+Theme URI: http://localhost/
+Author: Ryosuke Yamamoto
+Author URI: http://localhost/
+Description: Dotinstall
+Version: 1.0
+
+*/
+
+body {
+	color:white;
+	font-size:1em;
+	font-family:Arial, Verdana;
+	background-image: url(top%20%E6%89%93%E3%81%A1%E5%90%88%E3%82%8F%E3%81%9B.png);
+	background-size:cover;
+}
+
+a {
+	color:white;
+	text-decoration: none;
+}
+
+p {
+	padding-bottom:; 1em;
+	margin: 0;
+	line-height: 1.8;
+}
+
+.container {
+	width: 37.5em;
+	margin: auto;
+	overflow: hidden;
+}
+
+/* header */
+
+#header {
+
+}
+
+	h1 {
+		width:40%;
+		font-weight: bold;
+		font-size: 2em;
+		padding: 0.9em 0;
+		float:left;
+		
+	}
+	
+	.menu {
+		margin-bottom:1.8em;
+		font-size: 1.2em;
+		list-style: none;
+		overflow: hidden;
+		margin-top:1.8em;
+		
+
+	}
+
+	.menu li {
+		float: left;
+		width: 4em;
+		text-align: center;
+	}
+
+	.menu a {
+	
+	}
+
+	.menu a:hover {
+		
+	}
+
+/* posts */
+	
+#posts {
+	float: left;
+	width: 37.5em;
+}
+	.post {
+		margin-bottom: 1.7em;
+	}
+
+		.post-header {
+			margin-bottom: 1em;
+		}
+
+		.post-header h2 {
+			font-size: 1.7em;
+			font-weight: bold;
+		}
+
+		.post-meta {
+			font-size: 0.8em;
+			padding: 0.6em;
+		}
+
+	.post-content {
+		overflow: hidden;
+	}
+
+		.post-image {
+			float: left;
+			width: 7em;
+		}
+
+		.post-body {
+			margin-left: 8em;
+		}
+
+/* navigation */
+
+.navigation {
+	overflow: hidden;
+	padding: 0.7em;
+	font-size: 0.8em;
+	margin-bottom: 1em;
+}
+	.prev {
+		float: left;
+		width: 12.5em;
+	}
+
+	.next {
+		float: right;
+		width: 12.5em;
+		text-align: right;
+	}
+/* sidebar */ 
+
+#sidebar {
+	float: right;
+	width: 10em;
+}
+
+	.widget {
+		margin-bottom: 25px;
+	}
+
+		.widget h3 {
+			font-weight: bold;
+			padding-bottom: 0.5em;
+		}
+
+		.widget li {
+			line-height: 1.8;
+		}
+
+/* footer */
+
+#footer {
+	padding: 0.7em 0;
+	font-size: 1em;
+	color: #aaa;
+	border-top: 1px solid #ccc;
+}
